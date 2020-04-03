@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run tsyi_nlp_app.py
+web: sh setup.sh && streamlit run tsyi-nlp-app.py
