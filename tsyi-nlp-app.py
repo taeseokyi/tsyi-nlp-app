@@ -6,6 +6,19 @@ def main():
   st.sidebar.title("Navigation")
   goto_menu = st.sidebar.radio("Go to",
     ("Home", "기능1", "기능2"))
+  st.sidebar.title("About")
+  st.sidebar.info('''
+- 우리는 자연 언어 생성에서 최첨단 기술을 발전시켜 연구자에게 새로운 기회를 제공합니다.
+
+- 우리는 문서를 요약하여 사용자 시간을 절약하는 것 외에도 논문 작성을 지원하거나 연구관련 질문에 답변함으로써 KISTI 서비스에 대한 경험을 향상시킬 수 있습니다.
+
+- 또한 자연어 문장 생성 기술은 연구자와 대화하는 유창한 챗봇과 디지털 어시스턴트를 위한 길을 닦을 수 있습니다.
+
+- 우리는 언어 모델의 질을 계속 향상시키면서 새로운 가능성을 탐색합니다.
+
+[KISTI 융합서비스 센터]
+  '''
+  )
   if goto_menu == 'Home':
       st.title("TITLE Home")
       st.subheader("Streamlit is cool.")
